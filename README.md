@@ -103,6 +103,3 @@ Contribuições são bem-vindas! Por favor, faça um fork do repositório e envi
 Esta aplicação é distribuída sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 
-Este README cobre uma visão geral da aplicação, tecnologias usadas, estrutura do projeto, instruções de instalação e execução, e informações sobre contribuição e licença. Ajuste-o conforme necessário para melhor se adequar à sua aplicação e informações adicionais.
-
-
