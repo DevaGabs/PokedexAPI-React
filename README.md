@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# PokedexAPI-React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação de Pokedex construída com React e Material-UI, consumindo dados de uma API para exibir informações sobre Pokémons. 
 
-## Available Scripts
+## Visão Geral
 
-In the project directory, you can run:
+Esta aplicação permite que os usuários pesquisem e visualizem informações detalhadas sobre vários Pokémons. Utiliza a biblioteca `react-slick` para criar um carrossel de Pokémons e oferece funcionalidades como download de informações em PDF e filtragem de Pokémons por nome.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Exibição de cards de Pokémons em um carrossel.
+- Visualização de detalhes de Pokémons, incluindo imagens e variações.
+- Pesquisa de Pokémons por nome.
+- Download das informações do Pokémon em formato PDF.
+- Navegação intuitiva com uma barra de navegação estilizada.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **Material-UI**: Biblioteca de componentes React para um design bonito e responsivo.
+- **react-slick**: Componente de carrossel para React.
+- **html2canvas** e **jspdf**: Bibliotecas para gerar PDFs a partir de componentes React.
+- **Docker**: Para containerização da aplicação.
+- **GitHub Actions**: Para integração contínua e deploy automatizado.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do Projeto
 
-### `npm run build`
+Pokedex/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── MyComponent.jsx
+│ │ ├── Navbar.jsx
+│ │ ├── PokemonCard.jsx
+│ │ ├── PokemonCarousel.jsx
+│ │ └── ...
+│ ├── App.jsx
+│ ├── index.js
+│ └── ...
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── ...
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação e Uso
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js instalado.
+- Docker e Docker Compose instalados.
 
-### `npm run eject`
+### Passos para Rodar a Aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/DevaGabs/PokedexAPI-React.git
+   cd PokedexAPI-React
+2. Instale as dependências:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copiar código
+npm install
+3.Inicie a aplicação localmente:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copiar código
+npm start
+4.Abra http://localhost:3000 no seu navegador.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usando Docker
+1.Construa a imagem Docker:
 
-## Learn More
+bash
+Copiar código
+docker build -t pokedex-api-react .
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2.Execute o container:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+Copiar código
+docker run -p 3000:3000 pokedex-api-react
 
-### Code Splitting
+3.Abra http://localhost:3000 no seu navegador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usando Docker Compose
+Execute o Docker Compose:
 
-### Analyzing the Bundle Size
+bash
+Copiar código
+docker-compose up
+Abra http://localhost:3000 no seu navegador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribuição
+Contribuições são bem-vindas! Por favor, faça um fork do repositório e envie um pull request com suas melhorias.
 
-### Making a Progressive Web App
+## Licença
+Esta aplicação é distribuída sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este README cobre uma visão geral da aplicação, tecnologias usadas, estrutura do projeto, instruções de instalação e execução, e informações sobre contribuição e licença. Ajuste-o conforme necessário para melhor se adequar à sua aplicação e informações adicionais.
