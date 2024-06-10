@@ -92,6 +92,8 @@ Copiar código
 docker-compose up
 Abra http://localhost:3000 no seu navegador.
 
+## Imagem da aplicação
+
 ![Imagem da aplicação](./src/Capturar.PNG)
 
 ## Contribuição
