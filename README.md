@@ -92,6 +92,10 @@ Copiar código
 docker-compose up
 Abra http://localhost:3000 no seu navegador.
 
+## Deploy
+
+Para fazer o deploy da aplicação, você pode usar serviços como AWS Elastic Beanstalk ou Google Cloud Platform. Veja as seções específicas de cada serviço para mais detalhes sobre como configurar e fazer o deploy.
+
 ## Imagem da aplicação
 
 ![Imagem da aplicação](./src/Capturar.PNG)
